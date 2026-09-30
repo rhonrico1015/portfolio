@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Rhon Rico Fullero — web developer and automation specialist. WordPress, Shopify, CRM pipelines, workflows, funnels, and campaigns."/>
+  <title>Rhon Rico Fullero | Web Developer & Automation</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg"/>
+  <link rel="apple-touch-icon" href="images/favicon.jpg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+  <script>
+    (function () {
+      var stored = localStorage.getItem("theme");
+      var theme = stored === "light" || stored === "dark"
+        ? stored
+        : (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- LOADER -->
+  <div id="loader" class="loader">
+    <div class="loader__mark" aria-hidden="true">RF</div>
+  </div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="nav__logo" href="#top" aria-label="Hi, I'm Rhon - back to top">
+        <span class="nav__logo-mark" aria-hidden="true">RF</span>
+        Hi, I'm <span class="accent">Rhon</span>
+      </a>
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#why-hire">Why Hire Me</a></li>
+        <li><a href="#services">What I Do</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a class="nav__cta" href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav__tools">
+        <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to light mode">
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>
+          </svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 14.5A8.5 8.5 0 1 1 9.5 3 7 7 0 0 0 21 14.5z"/>
+          </svg>
+        </button>
+        <button class="nav__toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero section" id="top">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <p class="status-pill"><span class="status-pill__dot" aria-hidden="true"></span> Open to opportunities</p>
+          <p class="eyebrow">Web Developer &amp; Automation</p>
+          <h1 class="hero__title" id="hero-heading">I build systems that<br/>grow your business.</h1>
+          <p class="hero__subtitle">
+            Hi, I'm <strong>Rhon Rico Fullero</strong> — I build websites and the systems behind them. WordPress and Shopify sites, plus automations, funnels, CRM pipelines, and campaigns in GoHighLevel.
+          </p>
+          <div class="hero__actions">
+            <a href="#experience" class="btn btn--primary">See my work</a>
+            <a href="#services" class="btn btn--ghost">View services</a>
+          </div>
+          <dl class="hero__stats">
+            <div>
+              <dt>Platform</dt>
+              <dd>Web &amp; Automation</dd>
+            </div>
+            <div>
+              <dt>Strength</dt>
+              <dd>Sites &amp; Systems</dd>
+            </div>
+            <div>
+              <dt>Goal</dt>
+              <dd>Remote Role</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero__terminal reveal">
+          <div class="terminal">
+            <div class="terminal__bar">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <span class="terminal__title">build.log</span>
+            </div>
+            <pre class="terminal__body"><code><span class="t-muted">$ portfolio check</span>
+
+<span class="t-pass">✓</span> WordPress storefront published
+<span class="t-pass">✓</span> Shopify theme customized
+<span class="t-pass">✓</span> CRM pipeline configured — 5 stages
+<span class="t-pass">✓</span> Lead follow-up workflow triggered
+<span class="t-pass">✓</span> Landing page live
+<span class="t-pass">✓</span> Email campaign launched
+<span class="t-warn">!</span> Webhook payload mismatch
+  → Debugged and resolved
+
+<span class="t-muted">6 passed · 1 issue resolved · 2.1s</span>
+<span class="t-cursor">_</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>WordPress</span><span>Shopify</span><span>GoHighLevel</span><span>React</span><span>Zapier</span><span>Funnels</span><span>CRM</span><span>Slack bots</span><span>Next.js</span><span>Campaigns</span>
+        <span>WordPress</span><span>Shopify</span><span>GoHighLevel</span><span>React</span><span>Zapier</span><span>Funnels</span><span>CRM</span><span>Slack bots</span><span>Next.js</span><span>Campaigns</span>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container about__grid">
+        <div class="about__main reveal">
+          <p class="eyebrow">About Me</p>
+          <h2>Websites and systems, built to last.</h2>
+          <div class="about__text">
+            <p>I build responsive websites and the workflows that keep a business moving. That includes WordPress and Shopify storefronts, plus CRM pipelines, funnels, calendars, and campaigns in GoHighLevel.</p>
+            <p>Most owners don't have time to wrestle with the tech. I handle the build, the follow-up, and the fixes so you can focus on clients.</p>
+            <p><strong>I'm looking for a remote role where I can build sites and manage the systems that help a business scale.</strong></p>
+          </div>
+        </div>
+        <aside class="about__card reveal">
+          <h3>Quick Facts</h3>
+          <ul class="fact-list">
+            <li><span class="fact-list__label">Location</span><span class="fact-list__value">Philippines · Remote Worldwide</span></li>
+            <li><span class="fact-list__label">Status</span><span class="fact-list__value">Open to Opportunities</span></li>
+            <li><span class="fact-list__label">Expertise</span><span class="fact-list__value">Websites, Automations, CRM, Campaigns</span></li>
+            <li><span class="fact-list__label">Availability</span><span class="fact-list__value">Full-time &amp; Part-time</span></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- WHY HIRE ME -->
+    <section class="section section--alt" id="why-hire">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow">Why Hire Me</p>
+          <h2>Why I'm the right person for the job.</h2>
+          <p class="section__lead">I build the website and the follow-up behind it — from WordPress and Shopify to pipelines, funnels, and campaigns.</p>
+        </header>
+        <div class="approach__steps">
+          <article class="approach__step reveal">
+            <span class="approach__number">01</span>
+            <div>
+              <h3>Sites and Systems</h3>
+              <p>I build the site and the follow-up behind it — WordPress, Shopify, and GoHighLevel workflows, funnels, calendars, and pipelines. I understand how the pieces connect.</p>
+            </div>
+          </article>
+          <article class="approach__step reveal">
+            <span class="approach__number">02</span>
+            <div>
+              <h3>Systems Thinker</h3>
+              <p>I don't just set up features in isolation — I build end-to-end systems. Every automation I create is designed to work together, scale with your business, and be easy to manage.</p>
+            </div>
+          </article>
+          <article class="approach__step reveal">
+            <span class="approach__number">03</span>
+            <div>
+              <h3>Fast, Reliable Delivery</h3>
+              <p>I work quickly without cutting corners. I deliver on or before deadline and communicate proactively so you always know where things stand.</p>
+            </div>
+          </article>
+          <article class="approach__step reveal">
+            <span class="approach__number">04</span>
+            <div>
+              <h3>Fully Remote-Ready</h3>
+              <p>I'm equipped to work remotely with zero friction — using Zoom, Slack, Teams, and async tools daily to keep projects moving across any time zone.</p>
+            </div>
+          </article>
+          <article class="approach__step reveal">
+            <span class="approach__number">05</span>
+            <div>
+              <h3>Attention to Detail</h3>
+              <p>Broken automations cost money and lose leads. I test every workflow, double-check every trigger, and fix issues before they reach your clients.</p>
+            </div>
+          </article>
+          <article class="approach__step reveal">
+            <span class="approach__number">06</span>
+            <div>
+              <h3>Clear Communicator</h3>
+              <p>I ask the right questions before I start, give regular progress updates, and confirm before making changes that affect live campaigns or client data.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT I DO -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow">What I Do</p>
+          <h2>Websites, automations, and the systems around them.</h2>
+          <p class="section__lead">From a storefront or landing page to the CRM, follow-up, and campaigns that run after someone opts in.</p>
+        </header>
+        <div class="approach__steps">
+          <article class="approach__step reveal">
+            <span class="approach__number">01</span>
+            <div>
+              <h3>Websites &amp; Storefronts</h3>
+              <p>I build and customize responsive websites and online stores — WordPress themes, Shopify storefronts, and designs from Figma or Adobe XD turned into working pages.</p>
+              <ul class="tag-list">
+                <li>WordPress</li>
+                <li>Shopify</li>
+                <li>Custom themes</li>
+                <li>Design to site</li>
+              </ul>
+            </div>
+          </article>
+          <article class="approach__step reveal">
+            <span class="approach__number">02</span>
+            <div>
+              <h3>CRM &amp; Pipeline Setup</h3>
+              <p>I build and configure your GHL CRM from scratch — custom pipelines, contact fields, tags, and smart lists so your leads are always organised and your team knows exactly where every deal stands.</p>
+              <ul class="tag-list">
+                <li>Pipeline stages</li>
+                <li>Contact tagging</li>
+                <li>Custom fields</li>
+                <li>Smart lists</li>
+              </ul>
+            </div>
+          </article>
+          <article class="approach__step reveal">
+            <span class="approach__number">03</span>
+            <div>
+              <h3>Workflows &amp; Automations</h3>
+              <p>I design and build automated workflows that handle lead follow-up, appointment reminders, onboarding sequences, and more — so your business runs even while you sleep.</p>
+              <ul class="tag-list">
+                <li>Trigger-based flows</li>
+                <li>Multi-step sequences</li>
+                <li>Conditional logic</li>
+                <li>Pipeline automation</li>
+              </ul>
+            </div>
+          </article>
+          <article class="approach__step reveal">
+            <span class="approach__number">04</span>
+            <div>
+              <h3>Funnels &amp; Landing Pages</h3>
+              <p>I build high-converting funnels and full websites inside GHL — from landing pages and opt-in forms to multi-step sales funnels that turn traffic into booked calls and paying clients.</p>
+              <ul class="tag-list">
+                <li>Landing pages</li>
+                <li>Sales funnels</li>
+                <li>Opt-in pages</li>
+                <li>Website builds</li>
+              </ul>
+            </div>
+          </article>
+          <article class="approach__step reveal">
+            <span class="approach__number">05</span>
+            <div>
+              <h3>Email &amp; SMS Campaigns</h3>
+              <p>I set up and manage email and SMS broadcast campaigns and drip sequences inside GHL — crafted to engage your list, nurture leads, and drive action at every stage of the funnel.</p>
+              <ul class="tag-list">
+                <li>Email broadcasts</li>
+                <li>SMS campaigns</li>
+                <li>Drip sequences</li>
+                <li>List segmentation</li>
+              </ul>
+            </div>
+          </article>
+          <article class="approach__step reveal">
+            <span class="approach__number">06</span>
+            <div>
+              <h3>Calendars, Forms &amp; Surveys</h3>
+              <p>I set up GHL calendars for seamless appointment booking, build custom intake forms, and create surveys — all connected to your pipelines and workflows so nothing slips through the cracks.</p>
+              <ul class="tag-list">
+                <li>Calendar booking</li>
+                <li>Intake forms</li>
+                <li>Surveys</li>
+                <li>Auto-confirmations</li>
+              </ul>
+            </div>
+          </article>
+          <article class="approach__step reveal">
+            <span class="approach__number">07</span>
+            <div>
+              <h3>WhatsApp Messaging Setup</h3>
+              <p>I integrate and configure WhatsApp messaging inside GHL — setting up automated messages, conversation workflows, and broadcast campaigns to engage leads on the channel they actually use.</p>
+              <ul class="tag-list">
+                <li>WhatsApp integration</li>
+                <li>Automated messages</li>
+                <li>Broadcast campaigns</li>
+                <li>Conversation flows</li>
+              </ul>
+            </div>
+          </article>
+          <article class="approach__step reveal">
+            <span class="approach__number">08</span>
+            <div>
+              <h3>Webhooks, APIs &amp; Zapier</h3>
+              <p>I connect GHL to your other tools using webhooks, the GHL API, and Zapier — syncing data across platforms, triggering actions from external apps, and building integrations that extend what GHL can do.</p>
+              <ul class="tag-list">
+                <li>Webhook setup</li>
+                <li>API integrations</li>
+                <li>Zapier workflows</li>
+                <li>Third-party sync</li>
+              </ul>
+            </div>
+          </article>
+          <article class="approach__step reveal">
+            <span class="approach__number">09</span>
+            <div>
+              <h3>Lead Follow-Up &amp; Nurturing Systems</h3>
+              <p>I build complete lead nurturing systems inside GHL — multi-channel follow-up sequences using email, SMS, and calls that keep your leads warm and move them towards booking or buying.</p>
+              <ul class="tag-list">
+                <li>Multi-channel follow-up</li>
+                <li>Nurture sequences</li>
+                <li>Re-engagement flows</li>
+                <li>Conversion tracking</li>
+              </ul>
+            </div>
+          </article>
+          <article class="approach__step reveal">
+            <span class="approach__number">10</span>
+            <div>
+              <h3>Troubleshooting &amp; Optimization</h3>
+              <p>I audit existing GHL setups, identify broken workflows and underperforming funnels, and fix or optimise them — so your system works as it should and converts at its best.</p>
+              <ul class="tag-list">
+                <li>Workflow audits</li>
+                <li>Funnel fixes</li>
+                <li>Performance review</li>
+                <li>System clean-up</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section section--alt" id="skills">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow">Skills &amp; Expertise</p>
+          <h2>What I bring to a project.</h2>
+          <p class="section__lead">Web development, automation, and the work habits to deliver both.</p>
+        </header>
+
+        <div class="skills__grid">
+          <article class="skill-card reveal">
+            <h3>Web Development</h3>
+            <p>I build and maintain sites in WordPress and Shopify, and I work in PHP, HTML, CSS, JavaScript, and React. Designs from Figma and Adobe XD become working pages.</p>
+            <ul class="tag-list">
+              <li>WordPress</li>
+              <li>Shopify</li>
+              <li>PHP</li>
+              <li>React</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Automation &amp; Integrations</h3>
+            <p>I connect tools with webhooks, APIs, and Zapier, and I set up GoHighLevel pipelines, workflows, funnels, and campaigns when that's the system you use.</p>
+            <ul class="tag-list">
+              <li>Webhooks</li>
+              <li>API connections</li>
+              <li>Zapier</li>
+              <li>Third-party tools</li>
+            </ul>
+          </article>
+          <article class="skill-card reveal">
+            <h3>Communication &amp; Remote Tools</h3>
+            <p>I work effectively in remote teams using the tools that keep async collaboration smooth — from project management to video calls and daily check-ins.</p>
+            <ul class="tag-list">
+              <li>Zoom &amp; Teams</li>
+              <li>Slack</li>
+              <li>Google Workspace</li>
+              <li>Async workflows</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="tools-section reveal">
+          <h3 class="tools-section__title">Tools and Platforms I Work With</h3>
+          <div class="tools-grid">
+            <div class="tool-chip"><img src="images/tool-wordpress.svg" alt=""/><span>WordPress</span></div>
+            <div class="tool-chip"><img src="images/tool-shopify.svg" alt=""/><span>Shopify</span></div>
+            <div class="tool-chip"><img src="images/tool-php.svg" alt=""/><span>PHP</span></div>
+            <div class="tool-chip"><img src="images/tool-react.svg" alt=""/><span>React</span></div>
+            <div class="tool-chip"><img src="images/tool-ghl.svg" alt=""/><span>GoHighLevel</span></div>
+            <div class="tool-chip"><img src="images/tool-zapier.png" alt=""/><span>Zapier</span></div>
+            <div class="tool-chip"><img src="images/tool-skool.png" alt=""/><span>Skool</span></div>
+            <div class="tool-chip"><img src="images/tool-skype.svg" alt=""/><span>Skype</span></div>
+            <div class="tool-chip"><img src="images/tool-zoom.svg" alt=""/><span>Zoom</span></div>
+            <div class="tool-chip"><img src="images/tool-teams.svg" alt=""/><span>Microsoft Teams</span></div>
+            <div class="tool-chip"><img src="images/tool-gsuite.svg" alt=""/><span>Google Workspace</span></div>
+            <div class="tool-chip"><img src="images/tool-excel.svg" alt=""/><span>Microsoft Excel</span></div>
+            <div class="tool-chip"><img src="images/tool-sheets.svg" alt=""/><span>Google Sheets</span></div>
+            <div class="tool-chip"><img src="images/tool-gmail.svg" alt=""/><span>Gmail</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <header class="section__header reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>Web development, support, and technical work.</h2>
+          <p class="section__lead">Recent work includes an internal analytics dashboard, Slack report automation, and client chatbots, alongside 5+ years building WordPress and Shopify sites.</p>
+          <a class="btn btn--primary" href="RhonFulleroCV.pdf" download>Download CV</a>
+        </header>
+
+        <div class="cv__layout">
+          <div class="cv__jobs">
+            <article class="cv-job cv-job--spot reveal">
+              <div class="cv-job__meta">
+                <span>2026</span>
+                <span>Let's Get Funded</span>
+              </div>
+              <h3>Internal Analytics Dashboard</h3>
+              <p class="cv-job__place">Next.js, React, TypeScript, Tailwind, and Recharts. Live data from Google Sheets.</p>
+              <ul>
+                <li>Built the internal analytics app for refund requests, Skool performance, sales, and collections.</li>
+                <li>Added KPI cards, charts, date filters, and a login so the team sees fresh numbers without opening the sheet.</li>
+                <li>Synced Google Sheets on a schedule and on refresh, including a fallback when the live pull is slow.</li>
+              </ul>
+            </article>
+
+            <article class="cv-job cv-job--spot reveal">
+              <div class="cv-job__meta">
+                <span>2026</span>
+                <span>Client chatbots</span>
+              </div>
+              <h3>Lead Chatbots</h3>
+              <p class="cv-job__place">Easy Ways to Credit and Killa Kay.</p>
+              <ul>
+                <li>Set up chatbots that reply in each brand's voice, qualify new leads, and send people to the main offer.</li>
+                <li>Wrote keyword triggers, first replies, comment-to-DM flows, and follow-ups for contacts who go quiet.</li>
+                <li>Covered offers, FAQs, and common objections, including English and Spanish for Easy Ways to Credit.</li>
+              </ul>
+            </article>
+
+            <article class="cv-job cv-job--spot reveal">
+              <div class="cv-job__meta">
+                <span>2026</span>
+                <span>Let's Get Funded</span>
+              </div>
+              <h3>Report Automation</h3>
+              <p class="cv-job__place">FastAPI, Playwright, Google Sheets, Slack, and GitHub Actions.</p>
+              <ul>
+                <li>Built a service that turns a Google Sheet range into a styled report image and posts it to Slack.</li>
+                <li>Automated daily approvals plus sales, gold, and Skool reports on a schedule.</li>
+                <li>Added Slack slash commands so the team can request a report in the channel and get it back in a minute or two.</li>
+              </ul>
+            </article>
+
+            <article class="cv-job reveal">
+              <div class="cv-job__meta">
+                <span>2021 — Present</span>
+                <span>ITworks Global Solutions</span>
+              </div>
+              <h3>Programmer / Developer</h3>
+              <ul>
+                <li>Built responsive e-commerce websites using Shopify and WordPress, including ACF, custom themes, templates, and functions.</li>
+                <li>Set up SMTP, Google Analytics, and SEO meta tags, and optimized sites for Google indexing.</li>
+                <li>Collaborated with account managers and designers to deliver client-ready solutions.</li>
+                <li>Ensured top-quality output as QA Project Coordinator.</li>
+                <li>Created responsive email templates in ActiveCampaign.</li>
+                <li>Converted Adobe XD and Figma designs into fully functional websites.</li>
+              </ul>
+            </article>
+
+            <article class="cv-job reveal">
+              <div class="cv-job__meta">
+                <span>January 2021 — July 2021</span>
+                <span>AP Global IT Solutions</span>
+              </div>
+              <h3>Junior Developer</h3>
+              <ul>
+                <li>Worked as a QA tester, checking functionality and quality.</li>
+                <li>Collaborated with senior developers on design improvements and best practices.</li>
+                <li>Developed features with HTML, CSS, PHP, and JavaScript for mobile and desktop.</li>
+                <li>Built websites using WordPress.</li>
+              </ul>
+            </article>
+
+            <article class="cv-job reveal">
+              <div class="cv-job__meta">
+                <span>April 2015 — June 2015</span>
+                <span>Antipolo City Hall</span>
+              </div>
+              <h3>Student Assistant, SPES Program</h3>
+              <p class="cv-job__place">Ynares Center / Antipolo City Hall — PREDAC Office (Provincial Employment Division and Assistance Center)</p>
+              <ul>
+                <li>Provided clerical and administrative support, including encoding, filing, and document sorting.</li>
+                <li>Assisted staff in processing employment-related documents and organizing office records.</li>
+                <li>Helped with walk-in inquiries and basic customer service.</li>
+                <li>Built discipline, communication skills, and work habits in a government office.</li>
+              </ul>
+            </article>
+
+            <article class="cv-job reveal">
+              <div class="cv-job__meta">
+                <span>March 2019 — July 2019</span>
+                <span>Pasig City</span>
+              </div>
+              <h3>IT Intern, Service Division</h3>
+              <p class="cv-job__place">VST ECS Phils. (formerly MSI-ECS Phils., Inc.)</p>
+              <ul>
+                <li>Assisted in diagnosing, repairing, and testing computer hardware components.</li>
+                <li>Supported technicians with laptop and desktop preventive maintenance.</li>
+                <li>Performed hardware installation, assembly, and component replacement.</li>
+                <li>Helped maintain inventory, service logs, and repair documentation.</li>
+              </ul>
+            </article>
+          </div>
+
+          <aside class="cv__side">
+            <article class="skill-card reveal">
+              <h3>Education</h3>
+              <ul class="cv-list">
+                <li>
+                  <strong>University of Rizal System</strong>
+                  <span>Antipolo Campus · BS Computer Engineering · Completed 2020</span>
+                </li>
+                <li>
+                  <strong>San Isidro National High School</strong>
+                  <span>Secondary education · Completed 2015</span>
+                </li>
+                <li>
+                  <strong>San Luis Elementary School</strong>
+                  <span>Primary education · Completed 2011</span>
+                </li>
+              </ul>
+            </article>
+
+            <article class="skill-card reveal">
+              <h3>Technical skills</h3>
+              <ul class="tag-list">
+                <li>WordPress</li>
+                <li>PHP</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React JS</li>
+                <li>Shopify</li>
+                <li>Website maintenance</li>
+                <li>Hardware repair</li>
+                <li>Technical support</li>
+                <li>Basic networking</li>
+                <li>Administrative support</li>
+              </ul>
+            </article>
+
+            <article class="skill-card reveal">
+              <h3>Certificates</h3>
+              <ul class="cv-list">
+                <li>
+                  <strong>Data Science Congress 2020</strong>
+                  <span>March 2020 · Deep learning, machine learning, blockchain, data visualization</span>
+                </li>
+                <li>
+                  <strong>National Certificate II</strong>
+                  <span>December 2019 · Computer Systems Servicing</span>
+                </li>
+              </ul>
+            </article>
+
+            <article class="skill-card reveal">
+              <h3>References</h3>
+              <ul class="cv-list">
+                <li>
+                  <strong>Jude Daver Go</strong>
+                  <span>Full Stack Developer</span>
+                </li>
+                <li>
+                  <strong>Lee Aron</strong>
+                  <span>Sr. Cyberdefense Analyst</span>
+                </li>
+              </ul>
+            </article>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section section--alt" id="contact">
+      <div class="container contact__inner reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's work together</h2>
+        <p class="section__lead">I'm open to web development, automation, and remote roles. I'd love to hear from you.</p>
+        <div class="contact__links">
+          <a class="contact__link" href="mailto:rhonricofullero15@gmail.com">
+            <span class="contact__link-label">Email</span>
+            <span>rhonricofullero15@gmail.com</span>
+          </a>
+          <a class="contact__link" href="tel:+639754253816">
+            <span class="contact__link-label">Phone</span>
+            <span>+63 975 425 3816</span>
+          </a>
+          <a class="contact__link" href="https://www.linkedin.com/in/rhon-rico-fullero-081595209/" target="_blank" rel="noopener noreferrer">
+            <span class="contact__link-label">LinkedIn</span>
+            <span>linkedin.com/in/rhon-rico-fullero-081595209</span>
+          </a>
+          <a class="contact__link" href="https://github.com/rhonrico1015" target="_blank" rel="noopener noreferrer">
+            <span class="contact__link-label">GitHub</span>
+            <span>github.com/rhonrico1015</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© 2026 Rhon Rico Fullero. Built to automate, built to scale.</p>
+      <a href="#top" class="text-link">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX -->
+  <div id="modal" class="lightbox" hidden onclick="closeModal()">
+    <div class="lightbox__backdrop"></div>
+    <div class="lightbox__dialog" onclick="event.stopPropagation()">
+      <button class="lightbox__close" onclick="closeModal()" aria-label="Close preview">
+        <svg viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      </button>
+      <figure class="lightbox__figure">
+        <img id="modal-img" class="lightbox__image" src="" alt=""/>
+        <figcaption id="modal-caption" class="lightbox__caption"></figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
